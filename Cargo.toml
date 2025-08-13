@@ -97,11 +97,11 @@ kona-genesis = { git = "https://github.com/op-rs/kona", tag = "kona-client/v1.0.
 
 # TODO: replace commit hash with tag when available
 # celo-kona
-celo-driver = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547" }
-celo-proof = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547" }
-celo-host = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547" }
-celo-protocol = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547", default-features = false }
-celo-genesis = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547", default-features = false }
+celo-driver = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba" }
+celo-proof = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba" }
+celo-host = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba" }
+celo-protocol = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba", default-features = false }
+celo-genesis = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba", default-features = false }
 
 # hana
 # TODO(fakedev9999): Bump to 1.0.0 once the release is out.
@@ -111,12 +111,12 @@ hana-host = { git = "https://github.com/celestiaorg/hana", rev = "61e4e26" }
 hana-oracle = { git = "https://github.com/celestiaorg/hana", rev = "61e4e26" }
 
 # hokulea
-hokulea-eigenda = { git = "https://github.com/Layr-Labs/hokulea", rev = "d635b67da5f2377524d6dd4f1396fe8e7e7d761d" }
-hokulea-host-bin = { git = "https://github.com/Layr-Labs/hokulea", rev = "d635b67da5f2377524d6dd4f1396fe8e7e7d761d" }
-hokulea-proof = { git = "https://github.com/Layr-Labs/hokulea", rev = "d635b67da5f2377524d6dd4f1396fe8e7e7d761d" }
-hokulea-witgen = { git = "https://github.com/Layr-Labs/hokulea", rev = "d635b67da5f2377524d6dd4f1396fe8e7e7d761d" }
-hokulea-zkvm-verification = { git = "https://github.com/Layr-Labs/hokulea", rev = "d635b67da5f2377524d6dd4f1396fe8e7e7d761d" }
-canoe-sp1-cc-host = { git = "https://github.com/Layr-Labs/hokulea", rev = "d635b67da5f2377524d6dd4f1396fe8e7e7d761d" }
+hokulea-eigenda = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
+hokulea-host-bin = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
+hokulea-proof = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
+hokulea-witgen = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
+hokulea-zkvm-verification = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
+canoe-sp1-cc-host = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
 
 # op-succinct
 op-succinct-prove = { path = "scripts/prove" }
@@ -182,10 +182,10 @@ op-alloy-rpc-types-engine = { version = "0.17.2", default-features = false }
 op-alloy-network = { version = "0.17.2", default-features = false }
 
 # Celo Alloy
-celo-alloy-consensus = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547", default-features = false }
-celo-alloy-rpc-types = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547", default-features = false }
-celo-alloy-rpc-types-engine = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547", default-features = false }
-celo-alloy-network = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547", default-features = false }
+celo-alloy-consensus = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba", default-features = false }
+celo-alloy-rpc-types = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba", default-features = false }
+celo-alloy-rpc-types-engine = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba", default-features = false }
+celo-alloy-network = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba", default-features = false }
 
 # Execution
 alloy-evm = { version = "0.10.0", default-features = false }
@@ -198,7 +198,7 @@ revm = { version = "24.0.1", default-features = false, features = [
 op-revm = { version = "5.0.1", default-features = false }
 
 # Celo Execution
-alloy-celo-evm = { git = "https://github.com/celo-org/celo-kona", rev = "cf02eb09f97137969218e5175280eaa45d1c0547", default-features = false }
+alloy-celo-evm = { git = "https://github.com/celo-org/celo-kona", rev = "16a05344e26060f7734b600490a8be87a1865cba", default-features = false }
 
 # SP1
 sp1-sdk = { version = "5.0.8" }
