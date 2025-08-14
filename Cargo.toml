@@ -111,12 +111,18 @@ hana-host = { git = "https://github.com/celestiaorg/hana", rev = "61e4e26" }
 hana-oracle = { git = "https://github.com/celestiaorg/hana", rev = "61e4e26" }
 
 # hokulea
-hokulea-eigenda = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
-hokulea-host-bin = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
-hokulea-proof = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
-hokulea-witgen = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
-hokulea-zkvm-verification = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
-canoe-sp1-cc-host = { git = "https://github.com/Layr-Labs/hokulea", rev = "11353756e935e77e7cb4d5b696ece2fe1f9f359d" }
+#hokulea-eigenda = { path = "../../hokulea/crates/eigenda" } 
+#hokulea-host-bin = { path = "../../hokulea/bin/host" }
+#hokulea-proof = { path = "../../hokulea/crates/proof" }
+#hokulea-witgen = { path = "../../hokulea/crates/witgen"  }
+#hokulea-zkvm-verification = { path = "../../hokulea/crates/zkvm-verification" }
+#canoe-sp1-cc-host = { path = "../../hokulea/canoe/sp1-cc/host" }
+hokulea-eigenda = { git = "https://github.com/Layr-Labs/hokulea", rev = "a7a8fbeb1d2ab8d65723740ab6f5b804381685aa" }
+hokulea-host-bin = { git = "https://github.com/Layr-Labs/hokulea", rev = "a7a8fbeb1d2ab8d65723740ab6f5b804381685aa" }
+hokulea-proof = { git = "https://github.com/Layr-Labs/hokulea", rev = "a7a8fbeb1d2ab8d65723740ab6f5b804381685aa" }
+hokulea-witgen = { git = "https://github.com/Layr-Labs/hokulea", rev = "a7a8fbeb1d2ab8d65723740ab6f5b804381685aa" }
+hokulea-zkvm-verification = { git = "https://github.com/Layr-Labs/hokulea", rev = "a7a8fbeb1d2ab8d65723740ab6f5b804381685aa" }
+canoe-sp1-cc-host = { git = "https://github.com/Layr-Labs/hokulea", rev = "a7a8fbeb1d2ab8d65723740ab6f5b804381685aa" }
 
 # op-succinct
 op-succinct-prove = { path = "scripts/prove" }

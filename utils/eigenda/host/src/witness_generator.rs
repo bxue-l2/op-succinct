@@ -22,7 +22,8 @@ use op_succinct_host_utils::witness_generation::{
 use rkyv::to_bytes;
 use sp1_core_executor::SP1ReduceProof;
 use sp1_prover::InnerSC;
-use sp1_sdk::{ProverClient, SP1Stdin};
+use sp1_sdk::{ProverClient, SP1Stdin, HashableKey};
+use std::fs;
 
 type WitnessExecutor = EigenDAWitnessExecutor<
     PreimageWitnessCollector<DefaultOracleBase>,
@@ -54,6 +55,8 @@ impl WitnessGenerator for EigenDAWitnessGenerator {
             // Get the canoe SP1 CC client ELF and setup verification key
             // The ELF is included in the canoe-sp1-cc-host crate
             const CANOE_ELF: &[u8] = canoe_sp1_cc_host::ELF;
+            //const CANOE_ELF: &[u8] = include_bytes!("/Users/bxue/Documents/eigenda-integration/hokulea/canoe/sp1-cc/elf/canoe-sp1-cc-client");
+            fs::write("canoe-op-succinct-import-2.txt", CANOE_ELF)?;
             let client = ProverClient::from_env();
             let (_pk, canoe_vk) = client.setup(CANOE_ELF);
 
@@ -62,6 +65,8 @@ impl WitnessGenerator for EigenDAWitnessGenerator {
             let reduced_proof: SP1ReduceProof<InnerSC> =
                 serde_cbor::from_slice(proof_bytes)
                     .expect("Failed to deserialize canoe proof");
+
+            println!("canoe_vk hash is {:?}", canoe_vk.vk.clone().hash_u32());
             stdin.write_proof(reduced_proof, canoe_vk.vk.clone());
         }
         let buffer = to_bytes::<rkyv::rancor::Error>(&witness)?;
